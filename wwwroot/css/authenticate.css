@@ -1,0 +1,70 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    height:100%
+}
+
+.auth-page {
+    min-height: 100vh;
+    height:100%;
+    display: flex;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: grey;
+    color: #fff;
+}
+
+.auth-left {
+    background-color: grey;
+    padding: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-right {
+    background-color: grey;
+    padding: 3rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth-left h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.form-floating .form-control {
+    background-color: white;
+    border: 1px solid #555;
+    color: black;
+}
+
+.form-floating label {
+    color: #ccc;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.auth-right h3 {
+    color: #ff0; 
+}
+
+.auth-right a {
+    color: #0af;
+    text-decoration: underline;
+}
+
+.auth-right p {
+    color: #ccc;
+}

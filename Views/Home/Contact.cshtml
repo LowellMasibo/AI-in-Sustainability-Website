@@ -1,0 +1,42 @@
+@{
+    ViewData["Title"] = "Contact & About";
+    ViewData["PageClass"] = "contact-page";
+}
+
+@section styles {
+    <link rel="stylesheet" href="~/css/contact.css" asp-append-version="true" />
+}
+
+<div class="contact-page">
+    <section class="contact-about-section text-light">
+        <div class="container-fluid px-0 py-5">
+            <h1 class="main-heading">Contact & About</h1>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container-fluid px-5">
+            <div class="row text-center mt-4 gx-5 gy-4">
+                <div class="col-md-4 contact-box">
+                    <h3>Contact Us</h3>
+                    <p>This website is developed by <strong>u3267781</strong>.<br />
+                       To get in contact, please email <a href="mailto:u3267781@uni.canberra.edu">u3267781@uni.canberra.edu.au</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 contact-box">
+                    <h3>About Us</h3>
+                    <p>This website provides an introduction to Artificial Intelligence in Sustainability and was created as part of a fulfillment of the assessment requirements of the <strong>Web Design and Programming</strong> unit at the University of Canberra.<br />
+                    It is built on the <strong>ASP.NET Core</strong> framework and employs <strong>Bootstrap</strong> responsive design techniques.</p>
+                </div>
+
+                <div class="col-md-4 contact-box">
+                    <h3>Copyright</h3>
+                    <p>All images used in this website were downloaded from generic google searches. The image sources can be accessed
+                    by clicking the images.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

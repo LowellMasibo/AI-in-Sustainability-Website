@@ -1,0 +1,63 @@
+@model AspNetCoreMvcWebSite.Models.AIImages
+
+@{
+    ViewData["Title"] = "Create";
+    ViewData["PageClass"] = "create-page";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/aiimages.css" asp-append-version="true" />
+}
+
+<div class="create-page">
+    <h4 class="main-heading">Upload AI image</h4>
+    <div class="row">
+        <div class="col-md-8">
+            <form asp-action="Create" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Prompt" class="control-label"></label>
+                    <textarea asp-for="Prompt" class="form-control" rows="5"></textarea>/>
+                    <span asp-validation-for="Prompt" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="ImageGenerator" class="control-label"></label>
+                    <input asp-for="ImageGenerator" class="form-control" />
+                    <span asp-validation-for="ImageGenerator" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UploadDate" class="control-label"></label>
+                    <input asp-for="UploadDate" class="form-control" />
+                    <span asp-validation-for="UploadDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Filename" class="control-label"></label>
+                    <input asp-for="Filename" class="form-control" />
+                    <span asp-validation-for="Filename" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Like" class="control-label"></label>
+                    <input asp-for="Like" class="form-control" />
+                    <span asp-validation-for="Like" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Upload image file</label>
+                    <input type="file" name="file" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4 side-image d-flex align-items-center justify-content-center">
+            <img src="~/images/siemens.jpg" alt="Siemens logo" class="img-fluid">
+        </div>
+    </div>
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,157 @@
+body.create-page {
+    background-image: url('/images/background2.jpg'); 
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.main-heading{
+    font-family: 'Anton',sans-serif; 
+    color: #22c55e; 
+    text-shadow: 2px 2px 0px navy, 2px 2px 4px white;
+    padding: 3vw 0vw 2vw 0vw; 
+    text-align: center; 
+    font-size: 4vw;
+}
+
+.sub-heading{
+   font-family: 'Anton',sans-serif; 
+   text-shadow: 2px 2px0px navy, 2px 2px 4px white; 
+   color:yellow; 
+   font-size: 2em;
+}
+
+.form-group .control-label,
+.form-check-label {
+    color: #fff;
+}
+
+.form-control {
+    background-color: white;
+    color: black;                   
+}
+
+.form-control::placeholder {
+    color: black;                   
+    opacity: 1;                    
+}
+
+.form-control {
+    border: 1px solid #ccc; 
+}
+
+.container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  gap: 2rem; 
+  padding: 2rem;
+}
+
+.content {
+  flex: 1; 
+}
+
+.side-image img {
+  max-width: 300px; 
+  height: 100%;
+  border-radius: 8px; 
+}
+
+.upload-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.upload-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  color: white;
+}
+.upload-link {
+  color:white;
+}
+
+.yellow-line {
+    border: 0;
+    height: 3px;          
+    background-color: #07ff45; 
+    margin: 0.5rem 0 1rem 0;   
+}
+
+.ai-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 3rem 0;
+    width:100%;
+}
+
+.ai-card-horizontal {
+    display: flex;
+    align-items: stretch;
+    background: linear-gradient(to bottom right, #fff8f0, #ffe4cc);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.ai-card-horizontal:hover {
+    transform: translateY(-4px);
+}
+
+.ai-card-reverse {
+    flex-direction: row-reverse;
+    background: linear-gradient(to bottom right, #f0f8ff, #e0f7ff);
+}
+
+.ai-image-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    overflow: hidden;
+}
+
+.ai-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ai-content {
+    flex: 2;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ai-generator {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #1f1f47;
+    background: linear-gradient(to right, #ffa751, #ffe259);
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.ai-description {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+

@@ -1,0 +1,62 @@
+@model IEnumerable<AspNetCoreMvcWebSite.Models.AIImages>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/aiimages.css" asp-append-version="true" />
+}
+
+<div class="upload-section">
+    <h4 class="main-heading">List of AI Images</h4>
+
+    @{
+        if (User.Identity?.IsAuthenticated == true)
+        {
+            <p class="upload-text">
+                    Click
+                    <a asp-area="" asp-controller="AIImages" asp-action="Create" class="upload-link">here</a> to upload an AI image.
+            </p>
+        }
+    }
+</div>
+
+<div class="ai-gallery">
+    @{
+        var index = 0;
+    }
+
+    @foreach (var item in Model)
+    {
+        var isEven = index % 2 == 0;
+        var cardClass = isEven ? "ai-card-horizontal" : "ai-card-horizontal ai-card-reverse";
+        index++;
+
+        <div class="@cardClass">
+            <div class="ai-image-container">
+                <img src="~/uploads/@item.Filename" alt="@item.Prompt" class="ai-image" />
+            </div>
+
+            <div class="ai-content">
+                <h5 class="ai-generator">@item.ImageGenerator</h5>
+                <p class="ai-description">@item.Prompt</p>
+
+                <div class="ai-buttons">
+                    <form asp-action="Like" asp-route-id="@item.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-primary">
+                            Like (@item.LikesCount)
+                        </button>
+                    </form>
+
+                    @if (User.IsInRole("admin"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

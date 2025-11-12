@@ -1,0 +1,267 @@
+#landing {
+    height:100vh;
+    background-image: url('/images/background2.jpg'); 
+    background-size: cover;      
+    background-position: center;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align:center;
+    padding:2rem;
+}
+
+.heading{
+  font-family: 'Anton', sans-serif;
+  background-image: linear-gradient(to right, darkgreen, darkgreen, limegreen, white, limegreen, darkgreen, darkgreen);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: brown;
+  padding: 6vw 2vw 0vw 2vw;
+  text-align: center;
+  font-size: 7vw;
+}
+
+.paragraph-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    max-width: 900px;
+    padding: 1rem 2vw;
+    color:white;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 20px;
+  max-width:100%;
+}
+
+.flex-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.text-box {
+  background-color: transparent;   
+  border: 1px solid white;        
+  padding: 20px 25px;
+  margin: 10px 0;
+  width: 90%;
+  color: white; 
+  backdrop-filter: blur(6px);                  
+}
+
+.text-box h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 4vw;
+  color: #28e96f;
+  text-shadow: 2px 2px 0px navy, 2px 2px 4px white;
+  margin-bottom: 0.8rem;
+}
+
+.text-box p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2vw;
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.text-box a {
+  display: inline-block;
+  padding: 6px 14px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1vw;
+  color: rgb(252, 249, 249);
+  border: 1px solid rgb(20, 20, 20);
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.text-box a:hover {
+  background: white;
+  color: black;
+}
+
+.ai-section {
+  width: 100%;       
+  height: 100vh;       
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('/images/background1.jpg');
+  background-size: cover; 
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content-wrapper {
+  width: 100%;
+  max-width: 1140px;  
+  margin: 0 auto;
+  padding: 2rem;     
+}
+
+.ai-section .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.ai-section .content {
+  display: flex;
+  flex-direction: row;  
+  gap: 2rem;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.ai-section .text-box {
+  flex: 1;
+  text-align: left;
+}
+
+.ai-section .images {
+  flex: 1;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ai-section .images img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.logo-container {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  max-width:220px;
+  height:220px;
+  border-radius: 8px;
+}
+
+.logo-container img {
+  display: block;
+  width: 25vw;
+  height: 100%;
+}
+
+.hover-description {
+  position: absolute;
+  inset: 0; 
+  background: rgba(60, 0, 0, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateY(20px); 
+}
+
+.hover-description h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 4vw;
+  color: #08f874;
+  text-shadow: 2px 2px 0px navy, 2px 2px 4px white;
+  margin-bottom: 1rem;
+}
+
+.hover-description p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5vw;
+  color: white;
+  line-height: 1.4;
+}
+
+.logo-container:hover .hover-description {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.upload-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  text-align: center;
+}
+.upload-heading {
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+  color: #2df878;
+  text-shadow: 2px 2px 0px navy, 2px 2px 4px white;
+  margin-bottom: 1rem;
+}
+
+.upload-text {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.25rem;
+  color: white;
+}
+.upload-link {
+  color:white;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.gap-3 {
+    gap: 1rem;
+}
+
+.upload-container {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+}
+
+.image-placeholder,
+.generated-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.image-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    font-weight: bold;
+    color: #333;
+    z-index: 2;
+}
+
+.generated-image {
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0; 
+}
+
