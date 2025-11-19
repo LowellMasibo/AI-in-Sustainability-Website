@@ -89,11 +89,14 @@ Linked from both navigation and footer menus
 │       └── _ValidationScriptsPartial.cshtml
 │
 ├── wwwroot/
-│   ├── css/site.css
-│   ├── js/site.js
+│   ├── css/
+│   │   └── site.css
+│   ├── js/
+│   │   └── site.js
 │   └── media/
 │
 └── appsettings.json
+
 
 🧰 Technologies
 Backend
