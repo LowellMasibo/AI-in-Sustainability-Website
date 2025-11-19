@@ -60,7 +60,6 @@ Linked from both navigation and footer menus
 
 
 🗂️ Project Structure
-
 ├── Controllers/
 │   ├── HomeController.cs
 │   ├── AIImagesController.cs
