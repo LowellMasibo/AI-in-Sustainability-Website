@@ -1,11 +1,11 @@
-📘 Responsive ASP.NET Core MVC Website
+📘 **Responsive ASP.NET Core MVC Website**
 
 This repository contains a responsive and fully featured web application built with ASP.NET Core MVC, Entity Framework Core, C#, and modern front-end technologies. The project demonstrates multi-page site design, role-based authentication, responsive UI development, and CRUD operations using an MVC architecture.
 
 The application was developed using Visual Studio Code, following best practices for maintainability, scalability, and clean separation of concerns.
 
 
-🚀 Key Features
+🚀 **Key Features**
 Responsive Web Interface
 
 Implemented with Bootstrap 5, Flexbox, CSS Grid, and media queries
@@ -59,7 +59,7 @@ Fully responsive and stylistically aligned with the rest of the site
 Linked from both navigation and footer menus
 
 
-🗂️ Project Structure
+🗂️ **Project Structure**
 ├── Controllers/
 │   ├── HomeController.cs
 │   ├── AIImagesController.cs
@@ -98,7 +98,7 @@ Linked from both navigation and footer menus
 └── appsettings.json
 
 
-🧰 Technologies
+🧰 **Technologies**
 Backend
 
 ASP.NET Core MVC (C#)
@@ -128,7 +128,7 @@ Visual Studio Code
 Chrome + Edge DevTools
 
 
-🧪 Functionality Overview
+🧪 **Functionality Overview**
 
 Multi-page navigation with intuitive site structure
 
@@ -143,12 +143,12 @@ Verified compatibility with both Chrome and Microsoft Edge
 Mobile-first layout tested through dev tools inspection
 
 
-🖼️ Media & Attribution
+🖼️ **Media & Attribution**
 
 All images, icons, and external media used within the project are sourced from copyright-free libraries or created independently. Full attributions are provided on the Contact page.
 
 
-📬 Connect
+📬 **Connect**
 
 For questions, suggestions, or collaboration:
 
